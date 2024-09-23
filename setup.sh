@@ -1,7 +1,6 @@
 # bin/bash
-sudo -s
 apt update
-apt add-apt-repository ppa:deadsnakes/ppa
+add-apt-repository ppa:deadsnakes/ppa
 apt update
 apt install python3.10 python3-pipenv
 git clone https://github.com/Urstar3/Ctfd_fork1
