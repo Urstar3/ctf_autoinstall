@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com your.ip.add.ress;
+    client_max_body_size 75M;
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/ctf/app.sock;
+
+    }
+}
