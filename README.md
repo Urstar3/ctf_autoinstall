@@ -10,7 +10,8 @@ couple config after run the script
 # create database in mysql 
      database name ctfd using command " create database ctfd;
     user admin@localhost by using command " create user 'username'@'localhost' identified by 'password';
- " grant all privileges on database. * to 'username'@'localhost'; flush privileges;"
+# grant privileges on database
+ " grant all privileges on database. * to 'username'@'localhost'; flush privileges;
         
 # change /ctf/CTFd/config.ini
     database url with mysql+pymysql://ctf:password@localahost/database
