@@ -7,7 +7,7 @@ User=your_username
 Group=your_groupname
 WorkingDirectory=/ctf
 Environment="PATH=/path/to/venv/bin"
-ExecStart=/path/to/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app
+ExecStart=/path/to/venv/bin/gunicorn --worker-class gevent --keep-alive 2  --access-logfile '/var/log/ctfd/logs/access.log' --error-logfile '/var/log/ctfd/logs/error.log' --workers 3 --bind unix:app.sock CTFd:create_app()
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
