@@ -8,8 +8,8 @@ couple config after run the script
 # change redis config at etc/redis/redis.conf
     requirepass to password for redis
 # create database in mysql 
-    # database name ctfd using command " 
-    user admin@localhost 
+     database name ctfd using command " create database ctfd;
+    user admin@localhost by using command " create user 'username'@'localhost' identified by 'password';
         
 # change /ctf/CTFd/config.ini
     database url with mysql+pymysql://ctf:password@localahost/database
