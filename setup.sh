@@ -10,8 +10,8 @@ sudo mysql -uroot -e "flush privileges;"
 
 git clone https://github.com/CTFd/CTFd.git
 sudo mv  CTFd /ctf
-sudo chwon ctf:ctf /ctf
-sudo cp gunicorn.service /etc/systemd/system/
+sudo chown ctf:ctf /ctf
+sudo cp *.service /etc/systemd/system/
 sudo cp ctfd /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/ctfd /etc/nginx/sites-enabled
 rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
