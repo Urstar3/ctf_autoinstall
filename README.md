@@ -1,4 +1,4 @@
-ctfd auto install for ubuntu server 24.04
+ctfd auto install for ubuntu server 24.04 and up
 couple config after run the script
 
 # change /etc/systemd/system/gunicorn.service
