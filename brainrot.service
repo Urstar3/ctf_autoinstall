@@ -7,8 +7,8 @@ After=docker.service
 Type=oneshot
 RemainAfterExit=yes
 WorkingDirectory=/ctf/docker/pwn/brainrot/
-ExecStart=/usr/local/bin/docker-compose up -d
-ExecStop=/usr/local/bin/docker-compose down
+ExecStart=/bin/bash -c "docker-compose up -d"
+ExecStop=/bin/bash -c "docker-compose down"
 TimeoutStartSec=0
 
 [Install]
