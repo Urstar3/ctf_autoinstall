@@ -1,4 +1,4 @@
-ctfd auto install for ubuntu server 24.04 and up please check the ppa repositiry for ondrec/python available in your os or ubuntu version 
+ctfd auto install for ubuntu server 24.04 and up please check the ppa repository for ondrec/python available in your os or ubuntu version 
 couple config after run the script
 
 # change /etc/systemd/system/gunicorn.service
